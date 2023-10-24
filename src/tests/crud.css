@@ -1,0 +1,82 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 5px 0;
+}
+
+.crud{
+    text-align: center;
+    width: 100vw;
+}
+
+.crud-form{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    top:0px;
+    z-index: 999;
+    background-color: rgba(137, 139, 139, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    width: 300px;
+    background: white;
+    padding: 10px;
+}
+
+.crud-form form input{
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 5px;
+
+}
+
+.crud-item{
+    text-align: left;
+    width: 300px;
+    padding:5px;
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin-bottom: 5px;
+}
+
+.crud-item:hover{
+    background-color: rgb(145, 229, 235);
+}
+
+.crud-item:active{
+    background-color: rgb(137, 139, 139);
+}
+
+form .buttons{
+    display: flex;
+    gap:1;
+    justify-content: end;
+}
+
+form .buttons > button{
+    padding:2px;
+    margin-left:2px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table tr, th, td{
+    border: solid 1px rgb(175, 171, 166);
+   padding: 5px;
+}
+
+table tr.active{
+    background-color: rgb(106, 224, 233);
+}
+
